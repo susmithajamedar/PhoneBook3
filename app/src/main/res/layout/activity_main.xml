@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/image"
+    android:layout_marginBottom="8dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Welcome to Phonebook "
+        android:textColor="#9E1F4B"
+        android:textSize="28sp" />
+    <Button
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:layout_width="235dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:background="#A6CA7D"
+    android:onClick="addContactPressed"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:text="Add Contact" />
+    <Button
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#63BDB6"
+        android:onClick="viewContactsPressed"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="View Contacts" />
+
+    <Button
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#D38BA3"
+        android:onClick="searchContactsPressed"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Search Contacts" />
+
+
+</LinearLayout>

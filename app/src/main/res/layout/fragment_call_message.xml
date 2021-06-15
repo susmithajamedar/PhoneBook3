@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:backgroundTintMode="src_over"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:background="#F8F6F6"
+        android:text="Contact Page"
+        android:textColor="#3255BE"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="51dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="8dp"
+            android:background="#FAF9F7"
+            android:text="Give a call by pressing button!"
+            android:textAlignment="textStart"
+            android:textColor="#831E94"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/callbutton"
+            android:layout_width="201dp"
+            android:layout_height="81dp"
+            android:onClick="callPhoneButtonHandler"
+            android:src="@drawable/phone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message by click of button!"
+        android:layout_gravity="start"
+        android:background="#FAF9F7"
+        android:textAlignment="textStart"
+        android:textColor="#9C2E26"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="101dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter message" />
+
+        <ImageView
+            android:id="@+id/messagebutton"
+            android:layout_width="212dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="sendSMSButtonHandler"
+            android:src="@drawable/message" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="18dp"
+        android:background="#FAF7F8"
+        android:text="Send Email!"
+        android:textAlignment="textStart"
+        android:textColor="#476D1C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="84dp"
+            android:layout_height="34dp"
+            android:layout_alignBaseline="@+id/editText1"
+            android:layout_alignBottom="@+id/editText1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:background="#F8F6F6"
+            android:text="To:"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailto"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:ems="10"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="#F8F6F6"
+            android:paddingLeft="5dp"
+            android:text="Subject:"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email Subject"
+            android:textColorHint="#000000"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/editText1"
+            android:ems="10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText3"
+            android:layout_alignBottom="@+id/editText3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="18dp"
+            android:background="#F8F6F6"
+            android:paddingLeft="7dp"
+            android:text="Body: "
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/editText2"
+            android:layout_alignLeft="@+id/editText2"
+            android:hint="Enter Email Body"
+            android:textColorHint="#000000"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="20dp"
+            android:background="#FAF9F7"
+            android:gravity="start"
+            android:text="Please Click the icon to send Email-->"
+            android:textAlignment="textStart"
+            android:textColor="#8D2247"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="209dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="10dp"
+            android:onClick="sendEmailButtonHandler"
+            android:src="@drawable/email" />
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
